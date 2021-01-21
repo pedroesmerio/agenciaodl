@@ -1,5 +1,12 @@
-function Home() {
-    return <h1>Home</h1>
-}
+import React, { Component } from "react";
+import Router from "next/router";
 
-export default Home
+export default class Index extends Component {
+  componentDidMount = () => {
+    Router.push("/components");
+  };
+
+  render() {
+    return <div />;
+  }
+}
